@@ -35,13 +35,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnMed = new System.Windows.Forms.Button();
             this.lblMed = new System.Windows.Forms.Label();
+            this.btnMode = new System.Windows.Forms.Button();
+            this.lblMode = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtNum
             // 
             this.txtNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtNum.Location = new System.Drawing.Point(269, 26);
-            this.txtNum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNum.Margin = new System.Windows.Forms.Padding(2);
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(371, 38);
             this.txtNum.TabIndex = 0;
@@ -51,7 +53,7 @@
             this.btnAvr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnAvr.Font = new System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnAvr.Location = new System.Drawing.Point(56, 96);
-            this.btnAvr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAvr.Margin = new System.Windows.Forms.Padding(2);
             this.btnAvr.Name = "btnAvr";
             this.btnAvr.Size = new System.Drawing.Size(90, 43);
             this.btnAvr.TabIndex = 1;
@@ -102,6 +104,27 @@
             this.lblMed.Size = new System.Drawing.Size(0, 38);
             this.lblMed.TabIndex = 5;
             // 
+            // btnMode
+            // 
+            this.btnMode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnMode.Font = new System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnMode.Location = new System.Drawing.Point(525, 96);
+            this.btnMode.Name = "btnMode";
+            this.btnMode.Size = new System.Drawing.Size(93, 43);
+            this.btnMode.TabIndex = 6;
+            this.btnMode.Text = "Mode";
+            this.btnMode.UseVisualStyleBackColor = false;
+            this.btnMode.Click += new System.EventHandler(this.btnMode_Click);
+            // 
+            // lblMode
+            // 
+            this.lblMode.AutoSize = true;
+            this.lblMode.Font = new System.Drawing.Font("Comic Sans MS", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblMode.Location = new System.Drawing.Point(526, 146);
+            this.lblMode.Name = "lblMode";
+            this.lblMode.Size = new System.Drawing.Size(0, 38);
+            this.lblMode.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -109,13 +132,15 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(694, 366);
+            this.Controls.Add(this.lblMode);
+            this.Controls.Add(this.btnMode);
             this.Controls.Add(this.lblMed);
             this.Controls.Add(this.btnMed);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblAvr);
             this.Controls.Add(this.btnAvr);
             this.Controls.Add(this.txtNum);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -132,6 +157,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnMed;
         private System.Windows.Forms.Label lblMed;
+        private System.Windows.Forms.Button btnMode;
+        private System.Windows.Forms.Label lblMode;
     }
 }
 
