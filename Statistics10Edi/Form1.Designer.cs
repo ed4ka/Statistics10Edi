@@ -140,6 +140,7 @@
             this.Controls.Add(this.lblAvr);
             this.Controls.Add(this.btnAvr);
             this.Controls.Add(this.txtNum);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";

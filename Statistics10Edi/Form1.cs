@@ -112,7 +112,6 @@ namespace Statistics10Edi
             List<int> modes = frequency.Where(kv => kv.Value == maxFrequency)
                                       .Select(kv => kv.Key)
                                       .ToList();
-
             return modes;
         }
     }
